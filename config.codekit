@@ -264,7 +264,7 @@
 	"javascriptOutputStyle": 2,
 	"javascriptOutputSuffix": ".min",
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "console",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

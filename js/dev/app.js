@@ -39,7 +39,6 @@
                 set_row(prev_parent, '', 1);
             }
         }
-        this.classList.add('session-selected');
 
         if (this.attributes.rowspan) {
             var next_parent = parent.nextElementSibling,
@@ -51,13 +50,30 @@
             set_row(next_parent, false, 1);
         }
 
+        this.classList.add('session-selected');
         set_row(parent, this.innerHTML, this.rowSpan);
         window.localStorage.setItem(parent.dataset.id, this.id);
+        rebuild_plan_url();
     }
 
     [].forEach.call(document.querySelectorAll('.session'), function (el) {
         el.addEventListener('click', select_session, false);
     });
+
+    function rebuild_plan_url() {
+        var hash = '#;';
+
+        [].forEach.call(document.querySelectorAll('tr[id]'), function (el) {
+            var session_id = window.localStorage.getItem(el.id),
+                session = document.getElementById(session_id);
+
+            if (session) {
+                hash += el.id + ':' + session.id + ';';
+            }
+        });
+
+        document.getElementById('plan-url').value = window.location.protocol + '//' + window.location.host + window.location.pathname + hash;
+    }
 
     function hashchange() {
         var hash = window.location.hash.slice(1),
@@ -71,6 +87,25 @@
                 document.getElementById(old_hash).classList.remove('active');
             }
         } else {
+            if (hash.slice(0, 1) === ';') {
+                var parts = hash.split(';');
+                delete parts[0];
+                delete parts[ parts.length - 1 ];
+
+                parts.forEach(function (item) {
+                    item = item.split(':');
+                    var row = document.getElementById(item[1]),
+                        parent = row.parentNode;
+
+                    if (row) {
+                        localStorage_count[ item[1].slice(0, 2) ]++;
+                        row.classList.add('session-selected');
+                        window.localStorage.setItem(item[0], item[1]);
+                        set_row(parent, row.innerHTML, row.rowSpan);
+                    }
+                });
+            }
+
             if (!localStorage_count.sa || !localStorage_count.so) {
                 window.location.hash = '#auswahl';
             } else {
@@ -105,6 +140,7 @@
             set_row(session.parentNode, session.innerHTML, session.rowSpan);
         });
         hashchange();
+        rebuild_plan_url();
     }, false);
 
     window.addEventListener('hashchange', hashchange);

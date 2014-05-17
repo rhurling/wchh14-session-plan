@@ -1,4 +1,4 @@
-WordCamp Hamburg 2014 - Session Plan Planner
+WordCamp Hamburg 2014 - Session Planner
 ============================================
 
 This is a simple Planning tool to plan which sessions one should / can attend.

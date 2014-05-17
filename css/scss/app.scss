@@ -1,3 +1,5 @@
+@import "pure";
+
 html, .pure-table {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -66,4 +68,8 @@ th:first-child {
     &.active {
         display: block;
     }
+}
+
+#auswahl h1:first-child {
+    margin-top: 0;
 }

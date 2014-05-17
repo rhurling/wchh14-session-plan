@@ -11,6 +11,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/scss\/_pure.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 4,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/scss\/_pure.scss",
+		"outputAbbreviatedPath": "\/css\/_pure.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/css\/scss\/app.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -57,6 +73,27 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
+		},
+	"\/README.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [

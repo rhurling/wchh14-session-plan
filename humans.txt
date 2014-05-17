@@ -12,3 +12,4 @@
     - Pure (http://purecss.io/)
     JS:
     - localStorage
+    - hashChange

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Session Planner - WordCamp Hamburg 2014</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0-rc-1/pure-min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="tab-headings">
+        <ul>
+            <li><a class="pure-button" id="link-samstag" href="#samstag">Samstag</a></li>
+            <li><a class="pure-button" id="link-sonntag" href="#sonntag">Sonntag</a></li>
+            <li><a class="pure-button" id="link-auswahl" href="#auswahl">Auswahl</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="samstag">
+            <table class="pure-table pure-table-bordered">
+                <thead>
+                <tr>
+                    <th>Zeit</th>
+                    <th>Session</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>9:45</td>
+                    <td>Begrüßung</td>
+                </tr>
+                <tr>
+                    <td>10:15</td>
+                    <td>Keynote</td>
+                </tr>
+                <tr id="samstag-1">
+                    <td>11:00</td>
+                    <td></td>
+                </tr>
+                <tr id="samstag-2">
+                    <td>11:45</td>
+                    <td></td>
+                </tr>
+                <tr id="samstag-3">
+                    <td>12:30</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td class="break">Mittagspause</td>
+                </tr>
+                <tr id="samstag-4">
+                    <td>14:00</td>
+                    <td></td>
+                </tr>
+                <tr id="samstag-5">
+                    <td>14:45</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:15</td>
+                    <td class="break">Kaffepause</td>
+                </tr>
+                <tr id="samstag-6">
+                    <td>16:00</td>
+                    <td></td>
+                </tr>
+                <tr id="samstag-7">
+                    <td>16:45</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="sonntag">
+            <table class="pure-table pure-table-bordered">
+                <thead>
+                <tr>
+                    <th>Zeit</th>
+                    <th>Session</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>9:45</td>
+                    <td>Aktuelles & Spontan-Session Pitch</td>
+                </tr>
+                <tr id="sonntag-1">
+                    <td>10:15</td>
+                    <td>Keynote</td>
+                </tr>
+                <tr id="sonntag-2">
+                    <td>11:00</td>
+                    <td></td>
+                </tr>
+                <tr id="sonntag-3">
+                    <td>11:45</td>
+                    <td></td>
+                </tr>
+                <tr id="sonntag-4">
+                    <td>12:30</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td class="break">Mittagspause</td>
+                </tr>
+                <tr id="sonntag-5">
+                    <td>14:00</td>
+                    <td></td>
+                </tr>
+                <tr id="sonntag-6">
+                    <td>14:45</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:15</td>
+                    <td class="break">Kaffepause</td>
+                </tr>
+                <tr id="sonntag-7">
+                    <td>16:00</td>
+                    <td></td>
+                </tr>
+                <tr id="sonntag-8">
+                    <td>16:45</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:15</td>
+                    <td>Verabschiedung</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="auswahl">
+            <h1>Samstag</h1>
+            <div class="overflow-container">
+            <table class="pure-table pure-table-bordered">
+                <thead>
+                <tr>
+                    <th>Zeit</th>
+                    <th>MarketPress-Saal</th>
+                    <th>Saal 2</th>
+                    <th>Saal 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>10:00</td>
+                    <td>Begrüßung</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:15</td>
+                    <td>Keynote</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-id="samstag-1">
+                    <td>11:00</td>
+                    <td class="session" id="sa_1_1">Keep Calm And Blog On</td>
+                    <td class="session" id="sa_1_2">WordPress kost nix und WordPress kann ja jede/r – oder doch nicht?</td>
+                    <td class="session" id="sa_1_3">JavaScript im Blindflug?</td>
+                </tr>
+                <tr data-id="samstag-2">
+                    <td>11:45</td>
+                    <td class="session" id="sa_2_1" rowspan="2">Meta-Meetup</td>
+                    <td class="session" id="sa_2_2">Mit einem Online-Magazin auf WordPress umziehen</td>
+                    <td class="session" id="sa_2_3">Die .htaccess richtig nutzen</td>
+                </tr>
+                <tr data-id="samstag-3">
+                    <td>12:30</td>
+                    <td class="session" id="sa_3_2">Stories für eine bessere Welt</td>
+                    <td class="session" id="sa_3_3">Wie WordPress unsere Rechtschreibfehler findet</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td class="break" colspan="3">Mittagspause</td>
+                </tr>
+                <tr data-id="samstag-4">
+                    <td>14:00</td>
+                    <td class="session" id="sa_4_1" rowspan="2">Ein Blick in die Zukunft – WordPress in 2020</td>
+                    <td class="session" id="sa_4_2">Neu in WordPress – Wo finde ich Hilfe und Informationen?</td>
+                    <td class="session" id="sa_4_3">2FA4WP – Zwei-Faktor Authentifizierung für WordPress</td>
+                </tr>
+                <tr data-id="samstag-5">
+                    <td>14:45</td>
+                    <td class="session" id="sa_5_2">Selbstmarketing: Die richtigen Kunden gewinnen – aber wie?</td>
+                    <td class="session" id="sa_5_3">Multilinguale WordPress-Multisite</td>
+                </tr>
+                <tr>
+                    <td>15:15</td>
+                    <td class="break" colspan="3">Kaffepause</td>
+                </tr>
+                <tr data-id="samstag-6">
+                    <td>16:00</td>
+                    <td class="session" id="sa_6_1">Lightning Talks</td>
+                    <td class="session" id="sa_6_2">Newsletter & WordPress</td>
+                    <td class="session" id="sa_6_3">The theme is in the details</td>
+                </tr>
+                <tr data-id="samstag-7">
+                    <td>16:45</td>
+                    <td class="session" id="sa_7_1">Spontan-Session</td>
+                    <td class="session" id="sa_7_2">Spontan-Session</td>
+                    <td class="session" id="sa_7_3">Translation Packs</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h1>Sonntag</h1>
+            <div class="overflow-container">
+            <table class="pure-table pure-table-bordered">
+                <thead>
+                <tr>
+                    <th>Zeit</th>
+                    <th>MarketPress-Saal</th>
+                    <th>Saal 2</th>
+                    <th>Saal 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>9:45</td>
+                    <td>Aktuelles & Spontan-Session Pitch</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr data-id="sonntag-1">
+                    <td>10:15</td>
+                    <td class="session" id="so_1_1">Typographie im Responsive Webdesign</td>
+                    <td class="session" id="so_1_2">Individuelle Themes mit Custom Posts & Custom Fields</td>
+                    <td class="session" id="so_1_3">Plugin Challenges: von der Idee zur Umsetzung</td>
+                </tr>
+                <tr data-id="sonntag-2">
+                    <td>11:00</td>
+                    <td class="session" id="so_2_1">Lightning Talks</td>
+                    <td class="session" id="so_2_2">Grid – Ein schönes Tool, um Landingpages zu erstellen.</td>
+                    <td class="session" id="so_2_3">Sags auf meine Weise! – Plugin-Texte vs. Kundenwünsche</td>
+                </tr>
+                <tr data-id="sonntag-3">
+                    <td>11:45</td>
+                    <td class="session" id="so_3_1">Onlineshops mit WordPress</td>
+                    <td class="session" id="so_3_2">Underscores — Ein Startertheme für jeden</td>
+                    <td class="session" id="so_3_3" rowspan="2">In Objekten denken. Workshop OOP</td>
+                </tr>
+                <tr data-id="sonntag-4">
+                    <td>12:30</td>
+                    <td class="session" id="so_4_1">Hooks, Filter, Actions – Was zum Geier ist das?</td>
+                    <td class="session" id="so_4_2">Childthemes – wieso, weshalb warum?</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td class="break" colspan="3">Mittagspause</td>
+                </tr>
+                <tr data-id="sonntag-5">
+                    <td>14:00</td>
+                    <td class="session" id="so_5_1">Spontan-Session</td>
+                    <td class="session" id="so_5_2">Spontan-Session</td>
+                    <td class="session" id="so_5_3">The future and development of GlotPress</td>
+                </tr>
+                <tr data-id="sonntag-6">
+                    <td>14:45</td>
+                    <td class="session" id="so_6_1">SEO mit Rich Snippets und schema.org am Beispiel Foodblogs</td>
+                    <td class="session" id="so_6_2">Improving Your WordPress Workflow</td>
+                    <td class="session" id="so_6_3">Effizientere WordPress-Plugin-Entwicklung mit Softwaretests</td>
+                </tr>
+                <tr>
+                    <td>15:15</td>
+                    <td class="break" colspan="3">Kaffeepause</td>
+                </tr>
+                <tr data-id="sonntag-7">
+                    <td>16:00</td>
+                    <td class="session" id="so_7_1">SEO und Linkbuilding im Jahr 2014</td>
+                    <td class="session" id="so_7_2">Automatisiere deine WordPress Entwicklungsumgebung</td>
+                    <td class="session" id="so_7_3" rowspan="2">WordPress übersetzen: Core, Plugins und Themes</td>
+                </tr>
+                <tr data-id="sonntag-8">
+                    <td>16:45</td>
+                    <td class="session" id="so_8_1">Google Glass und WordPress</td>
+                    <td class="session" id="so_8_2">Was sind Präprozessoren? Und brauch ich die?</td>
+                </tr>
+                <tr>
+                    <td>17:15</td>
+                    <td>Verabschiedung</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.min.js"></script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>

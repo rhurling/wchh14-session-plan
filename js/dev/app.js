@@ -13,8 +13,9 @@
             return;
         }
 
+        console.log( row, value, rowspan, target_id, target_row, target );
         if (!target) {
-            target = new Element('td');
+            target = document.createElement('td');
             target_row.appendChild(target);
         }
 

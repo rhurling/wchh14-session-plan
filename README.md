@@ -7,7 +7,5 @@ It saves to JS localStorage so that it'll be available on the go, while at the W
 ToDo
 ====
 
-- Fix bug with workshops and resetting next line
-- Allow Sharing of Sessions (via hashed url which saves to localstorage and redirects)
 - Add Manifest
 - Host on github

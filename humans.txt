@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Rouven Hurling -- @rouvenhurling
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    CSS:
+    - Pure (http://purecss.io/)
+    JS:
+    - localStorage

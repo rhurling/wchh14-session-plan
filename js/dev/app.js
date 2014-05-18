@@ -41,9 +41,17 @@
         select_session.bind(session)();
     }
 
-    function select_session() {
+    function select_session(event) {
         var parent = this.parentNode,
             siblings = parent.querySelectorAll('td');
+
+        if (event && this.classList.contains('session-selected')) {
+            this.classList.remove('session-selected');
+            set_row(parent, '', 1);
+            window.localStorage.setItem(parent.dataset.id, '');
+            rebuild_plan_url();
+            return;
+        }
 
         [].forEach.call(siblings, function (el) {
             el.classList.remove('session-selected');

@@ -54,6 +54,11 @@ th:first-child {
     content: ' - ';
 }
 
+#reset {
+    float: right;
+    cursor: pointer;
+}
+
 .pure-table .session {
     cursor: pointer;
 

@@ -8,7 +8,7 @@
             target = target_row.querySelector('td').nextElementSibling;
 
         if (typeof value === 'boolean' && !value) {
-            if ( target ) {
+            if (target) {
                 target_row.removeChild(target);
             }
             window.localStorage.setItem(target_id, '');
@@ -21,7 +21,7 @@
         }
 
         if (saal) {
-            if ( saal === '1' ) {
+            if (saal === '1') {
                 saal = 'MarketPress-Saal';
             } else {
                 saal = 'Saal ' + saal;
@@ -154,6 +154,12 @@
         });
         hashchange();
         rebuild_plan_url();
+
+        document.getElementById('reset').addEventListener('click', function () {
+            window.localStorage.clear();
+            window.location.hash = '';
+            window.location.reload();
+        });
     }, false);
 
     window.addEventListener('hashchange', hashchange);

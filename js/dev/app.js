@@ -146,6 +146,7 @@
         if (hash.slice(0, 1) !== ';') {
             old_hash = hash;
         }
+        window.scrollTo(0, 0);
     }
 
     window.addEventListener('load', function () {

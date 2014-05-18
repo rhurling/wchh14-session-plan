@@ -13,3 +13,5 @@
     JS:
     - localStorage
     - hashChange
+    Favicons:
+    - RealFaviconGenerator (http://realfavicongenerator.net/)

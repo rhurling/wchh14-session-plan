@@ -45,6 +45,15 @@ th:first-child {
     color: #aaa;
 }
 
+.speaker, .saal {
+    font-size: .8em;
+    color: #777;
+}
+
+.speaker ~ .saal:before {
+    content: ' - ';
+}
+
 .pure-table .session {
     cursor: pointer;
 
@@ -55,6 +64,10 @@ th:first-child {
     &-selected {
         background-color: #007fb5;
         color: #fff;
+
+        .speaker, .saal {
+            color: #efefef;
+        }
 
         &:hover {
             background-color: darken(#007fb5, 5%);

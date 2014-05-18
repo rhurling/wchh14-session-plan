@@ -2,7 +2,7 @@
 
     var localStorage_count = {sa: 0, so: 0}, old_hash;
 
-    function set_row(row, value, rowspan) {
+    function set_row(row, value, rowspan, saal) {
         var target_id = row.dataset.id,
             target_row = document.getElementById(target_id),
             target = target_row.querySelector('td').nextElementSibling;
@@ -19,6 +19,19 @@
             target = document.createElement('td');
             target_row.appendChild(target);
         }
+
+        if (saal) {
+            if ( saal === '1' ) {
+                saal = 'MarketPress-Saal';
+            } else {
+                saal = 'Saal ' + saal;
+            }
+
+            value += '<span class="saal">' + saal + '</span>';
+            console.log(value);
+        }
+
+        console.log(saal);
 
         target.rowSpan = rowspan;
         target.innerHTML = value;
@@ -58,7 +71,7 @@
         }
 
         this.classList.add('session-selected');
-        set_row(parent, this.innerHTML, this.rowSpan);
+        set_row(parent, this.innerHTML, this.rowSpan, this.id.slice(-1));
         window.localStorage.setItem(parent.dataset.id, this.id);
         rebuild_plan_url();
     }

@@ -73,3 +73,27 @@ th:first-child {
 #auswahl h1:first-child {
     margin-top: 0;
 }
+
+@media print {
+    #samstag, #sonntag {
+        display: block;
+    }
+
+    #samstag:before {
+        content: 'Samstag';
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: .67em;
+        display: block;
+    }
+
+    #sonntag:before {
+        @extend #samstag:before;
+        margin-top: .67em;
+        content: 'Sonntag'
+    }
+
+    #auswahl, .tab-headings, label, input {
+        display: none;
+    }
+}

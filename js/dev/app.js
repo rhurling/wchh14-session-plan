@@ -103,7 +103,10 @@
         document.getElementById('plan-url').value = window.location.protocol + '//' + window.location.host + window.location.pathname + hash;
     }
 
-    function hashchange() {
+    function hashchange(event) {
+        if (event) {
+            event.preventDefault();
+        }
         var hash = window.location.hash.slice(1),
             hash_target = document.getElementById(hash);
 

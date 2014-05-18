@@ -28,10 +28,7 @@
             }
 
             value += '<span class="saal">' + saal + '</span>';
-            console.log(value);
         }
-
-        console.log(saal);
 
         target.rowSpan = rowspan;
         target.innerHTML = value;
@@ -121,7 +118,9 @@
             if (hash.slice(0, 1) === ';') {
                 var parts = hash.split(';');
                 delete parts[0];
-                delete parts[ parts.length - 1 ];
+                if ( ! parts[ parts.length - 1 ] ) {
+                    delete parts[ parts.length - 1 ];
+                }
 
                 parts.forEach(function (item) {
                     item = item.split(':');

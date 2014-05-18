@@ -1,11 +1,6 @@
-WordCamp Hamburg 2014 - Session Planner
+WordCamp Hamburg 2014 - Session Plan
 ============================================
 
-This is a simple Planning tool to plan which sessions one should / can attend.
-It saves to JS localStorage so that it'll be available on the go, while at the WordCamp for example ;)
-
-ToDo
-====
-
-- Add Manifest
-- Host on github
+Dies ist eine einfache Planungs-Möglichkeit um zu sehen welche Sessions man besuchen kann.
+Es speichert die ausgewählten Sessions im localStorage, sodass es auch wenn man später die seite besucht wieder da ist.
+Das ganze soll irgendwann auch mit einem HTML5-Manifest verbunden sein, sodass das ganze auch Offline funktioniert, z.B. wenn man auf dem WordCamp unterwegs ist.

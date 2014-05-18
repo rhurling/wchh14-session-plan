@@ -80,6 +80,10 @@ th:first-child {
     }
 }
 
+.tab-headings .pure-button {
+    border-radius: 0;
+}
+
 .tab-content > div {
     display: none;
 

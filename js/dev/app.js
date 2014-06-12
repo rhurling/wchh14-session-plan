@@ -21,14 +21,7 @@
         }
 
         if (saal) {
-            if (saal === '1') {
-                saal = 'MarketPress-Saal';
-            } else if (saal === '2') {
-                saal = '1&1-Saal';
-            } else if (saal === '3') {
-                saal = 'Community-Saal';
-            }
-
+            saal = document.querySelector('#auswahl th:nth-child(' + (parseInt(saal) + 1) + ')').textContent;
             value += '<span class="saal">' + saal + '</span>';
         }
 

@@ -23,8 +23,10 @@
         if (saal) {
             if (saal === '1') {
                 saal = 'MarketPress-Saal';
-            } else {
-                saal = 'Saal ' + saal;
+            } else if (saal === '2') {
+                saal = '1&1-Saal';
+            } else if (saal === '3') {
+                saal = 'Community-Saal';
             }
 
             value += '<span class="saal">' + saal + '</span>';

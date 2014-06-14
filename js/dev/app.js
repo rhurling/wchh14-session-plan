@@ -92,7 +92,7 @@
             }
         });
 
-        document.getElementById('plan-url').value = window.location.protocol + '//' + window.location.host + window.location.pathname + hash;
+        document.getElementById('plan-url').value = 'https://' + window.location.host + window.location.pathname + hash;
     }
 
     function hashchange(event) {
@@ -102,7 +102,7 @@
         var hash = window.location.hash.slice(1), target = false, date,
             hash_target = document.getElementById(hash);
 
-        if ( !hash_target || hash === 'auto' ) {
+        if (!hash_target || hash === 'auto') {
             if (!localStorage_count.sa || !localStorage_count.so) {
                 target = 'auswahl';
             } else {
@@ -128,7 +128,7 @@
             if (hash.slice(0, 1) === ';') {
                 var parts = hash.split(';');
                 delete parts[0];
-                if ( ! parts[ parts.length - 1 ] ) {
+                if (!parts[ parts.length - 1 ]) {
                     delete parts[ parts.length - 1 ];
                 }
 
@@ -166,6 +166,10 @@
         });
         hashchange();
         rebuild_plan_url();
+
+        if (window.location.protocol !== 'https:' && window.location.host.indexOf('github.io') > -1) {
+            window.location = document.getElementById('plan-url').value;
+        }
 
         document.getElementById('reset').addEventListener('click', function () {
             window.localStorage.clear();

@@ -99,8 +99,23 @@
         if (event) {
             event.preventDefault();
         }
-        var hash = window.location.hash.slice(1),
+        var hash = window.location.hash.slice(1), target = false, date,
             hash_target = document.getElementById(hash);
+
+        if ( !hash_target || hash === 'auto' ) {
+            if (!localStorage_count.sa || !localStorage_count.so) {
+                target = 'auswahl';
+            } else {
+                date = new Date();
+                if (date.getDate() >= 15 && date.getMonth() >= 5 && date.getYear() >= 2014) {
+                    target = 'sonntag';
+                } else {
+                    target = 'samstag';
+                }
+            }
+
+            hash_target = document.getElementById(target);
+        }
 
         if (hash_target) {
             hash_target.classList.add('active');
@@ -128,16 +143,7 @@
                 });
             }
 
-            if (!localStorage_count.sa || !localStorage_count.so) {
-                window.location.hash = '#auswahl';
-            } else {
-                var date = new Date();
-                if (date.getDate() >= 15 && date.getMonth() >= 5 && date.getYear() >= 2014) {
-                    window.location.hash = '#sonntag';
-                } else {
-                    window.location.hash = '#samstag';
-                }
-            }
+            window.location.hash = '#auto';
         }
 
         if (hash.slice(0, 1) !== ';') {

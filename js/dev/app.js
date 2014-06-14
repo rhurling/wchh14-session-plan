@@ -114,6 +114,7 @@
                 }
             }
 
+            hash = target;
             hash_target = document.getElementById(target);
         }
 

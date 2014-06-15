@@ -107,7 +107,7 @@
                 target = 'auswahl';
             } else {
                 date = new Date();
-                if (date.getDate() >= 15 && date.getMonth() >= 5 && date.getYear() >= 2014) {
+                if (date.getDate() >= 15 && date.getMonth() >= 5 && date.getFullYear() >= 2014) {
                     target = 'sonntag';
                 } else {
                     target = 'samstag';

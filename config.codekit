@@ -112,6 +112,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/app.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/app.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/scss\/_pure.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -121,6 +130,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/scss\/_pure.scss",
 		"outputAbbreviatedPath": "\/css\/_pure.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/css\/scss\/app.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 4,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/scss\/app.scss",
+		"outputAbbreviatedPath": "\/css\/app.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -189,6 +214,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/app.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/app.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/dev\/app.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/dev\/app.js",
+		"outputAbbreviatedPath": "\/js\/app.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
